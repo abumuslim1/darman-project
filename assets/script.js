@@ -14,6 +14,7 @@ const close_btn_popup_catalog  = document.querySelector('.close-btn');
 const product_item_open_popup = document.querySelectorAll('.product-item-btn');
 let div ;
 product_item_open_popup.forEach((item) =>{
+	exit();
 	console.log(item);
 	item.addEventListener('click', function(e) {
 		div = document.createElement('div');

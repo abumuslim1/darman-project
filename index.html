@@ -321,7 +321,7 @@
 									<img src="img/milssk.png" alt="">
 								</div>
 								<p>Молоко Цельное Отборное 6%</p>
-								<div class="product-item-btn">
+								<div class="product-item-btn info popup-trigger" id="infosadak" title="info">
 									Заказать
 								</div>
 							</div>
@@ -332,7 +332,7 @@
 									<img src="img/milssk.png" alt="">
 								</div>
 								<p>Молоко Цельное Отборное 6%</p>
-								<div class="product-item-btn">
+								<div class="product-item-btn info popup-trigger" id="infosadak" title="info">
 									Заказать
 								</div>
 							</div>
@@ -343,7 +343,7 @@
 									<img src="img/milssk.png" alt="">
 								</div>
 								<p>Молоко Цельное Отборное 6%</p>
-								<div class="product-item-btn">
+								<div class="product-item-btn info popup-trigger" id="infosadak" title="info">
 									Заказать
 								</div>
 							</div>
@@ -354,7 +354,7 @@
 									<img src="img/milssk.png" alt="">
 								</div>
 								<p>Молоко Цельное Отборное 6%</p>
-								<div class="product-item-btn">
+								<div class="product-item-btn info popup-trigger" id="infosadak" title="info">
 									Заказать
 								</div>
 							</div>
@@ -365,7 +365,7 @@
 									<img src="img/milssk.png" alt="">
 								</div>
 								<p>Молоко Цельное Отборное 6%</p>
-								<div class="product-item-btn">
+								<div class="product-item-btn info popup-trigger" id="infosadak" title="info">
 									Заказать
 								</div>
 							</div>
@@ -376,7 +376,7 @@
 									<img src="img/milssk.png" alt="">
 								</div>
 								<p>Молоко Цельное Отборное 6%</p>
-								<div class="product-item-btn">
+								<div class="product-item-btn info popup-trigger" id="infosadak" title="info">
 									Заказать
 								</div>
 							</div>
@@ -544,6 +544,42 @@
 <div class="sirok">
 	<img src="img/sirok.png" alt="">
 </div>
+
+	<div class="popup" role="alert">
+		<div class="popup-container">
+			<a href="#0" class="popup-close img-replace">Close</a>
+			<div class="product-item-popup">
+				<h2>Молоко пастеризованное 3,4%-4,5%</h2>
+				<div class="flex-b-pop mt-4">
+					<div class="product-item-popup-img">
+						<div class="recommend-item">
+							<div class="recommend-item-img">
+								<img src="img/milssk.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="row scroll-y">
+						<b class="col-xl-6 col-lg-6 col-md-12 col-12">Наименование:</b><span class="col-xl-6 col-lg-6 col-md-12 col-12">Молоко питьевое пастеризованное «Дарман»</span>
+						<b class="col-xl-6 col-lg-6 col-md-12 col-12">Массовая доля жира:</b><span class="col-xl-6 col-lg-6 col-md-12 col-12">3,4%-4,5%</span>
+						<b class="col-xl-6 col-lg-6 col-md-12 col-12">Состав:</b><span class="col-xl-6 col-lg-6 col-md-12 col-12">молоко цельное, молоко обезжиренное</span>
+						<b class="col-xl-6 col-lg-6 col-md-12 col-12">Пищевая ценность:</b><span class="col-xl-6 col-lg-6 col-md-12 col-12">жиры – 3,4-4,5 г, белки – 3,0 г, углеводы – 4,7 г.</span>
+						<b class="col-xl-6 col-lg-6 col-md-12 col-12">Энергетическая ценность:</b><span class="col-xl-6 col-lg-6 col-md-12 col-12">257 кДж/61 ккал-297 кДж/71 ккал</span><br>
+						<b class="col-xl-6 col-lg-6 col-md-12 col-12">Срок годности:</b><span class="col-xl-6 col-lg-6 col-md-12 col-12">17 суток</span><br>
+						<b class="col-xl-6 col-lg-6 col-md-12 col-12">Условия хранения:</b><span class="col-xl-6 col-lg-6 col-md-12 col-12">при температуре (4±2) °С </span><br>
+						<b class="col-xl-6 col-lg-6 col-md-12 col-12">Масса нетто:</b><span class="col-xl-6 col-lg-6 col-md-12 col-12">1900 г.</span><br>
+						<b class="col-xl-6 col-lg-6 col-md-12 col-12">Стандарт качества:</b><span class="col-xl-6 col-lg-6 col-md-12 col-12">ГОСТ 31450-2013</span><br>
+						<b class="col-xl-6 col-lg-6 col-md-12 col-12">Сертификаты соответствия:</b><span class="col-xl-6 col-lg-6 col-md-12 col-12">ГОСТ Р ИСО 22000-2007, стандарт «Халяль»</span><br>
+						<b class="col-xl-6 col-lg-6 col-md-12 col-12">Тип упаковки:</b><span class="col-xl-6 col-lg-6 col-md-12 col-12">макси пак </span><br>
+						<div class="but mt-3 give">
+							<img src="img/shopping-cart.png" alt="">
+							Заказать
+						</div>
+					</div>
+				</div>
+				<div class="close close-btn" onClick="close_popup()"></div>
+			</div>
+		</div>
+	</div>
 
 </div>
 <div class="stages">
@@ -932,6 +968,29 @@
 				$('.languages .current').attr("title", selectedValue);
 				$('.languages .hover').html(selectedValue);
 			})
+		});
+
+
+		jQuery(document).ready(function($){
+			//open popup
+			$('.popup-trigger').on('click', function(event){
+				event.preventDefault();
+				$('.popup').addClass('is-visible');
+			});
+
+			//close popup
+			$('.popup').on('click', function(event){
+				if( $(event.target).is('.popup-close') || $(event.target).is('.popup') ) {
+					event.preventDefault();
+					$(this).removeClass('is-visible');
+				}
+			});
+			//close popup when clicking the esc keyboard button
+			$(document).keyup(function(event){
+				if(event.which=='27'){
+					$('.popup').removeClass('is-visible');
+				}
+			});
 		});
 	</script>
 </body>
