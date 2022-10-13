@@ -9,6 +9,20 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="dbd66cbd-3c83-4b42-a89c-6a7d4778f282" name="zakaz" url="http://vh354.timeweb.ru">
+        <fileTransfer host="vh354.timeweb.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="d73e1163-29dd-455e-9c4a-d8192b3b1a2c" name="rline" url="http://vh338.timeweb.ru">
+        <fileTransfer host="vh338.timeweb.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
