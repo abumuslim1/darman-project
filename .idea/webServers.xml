@@ -23,6 +23,48 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="099f692f-cf2e-41f3-a4a6-2362e9f7236d" name="darman test" url="http://vh358.timeweb.ru">
+        <fileTransfer host="vh358.timeweb.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="f7724846-5fcc-4103-8f08-06e4bceabd2c" name="kidney" url="http://zul-bat.myjino.ru">
+        <fileTransfer accessType="FTPS" host="zul-bat.myjino.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="c0c35c05-9a63-4b76-b83c-608044766ff9" name="aers" url="http://vh358.timeweb.ru">
+        <fileTransfer host="vh358.timeweb.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="9626dc5e-89ad-4fc9-be8e-b3589e037f56" name="avtogid" url="http://taktikam.beget.tech">
+        <fileTransfer host="taktikam.beget.tech" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="40a257ec-fc87-4094-bb20-e1f4e59ffae9" name="time" url="http://vh322.timeweb.ru">
+        <fileTransfer host="vh322.timeweb.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="b21f5409-e986-466b-ac42-c931864c9aa6" name="tsunaev" url="http://ftp.tsuntaev.nichost.ru">
+        <fileTransfer host="ftp.tsuntaev.nichost.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

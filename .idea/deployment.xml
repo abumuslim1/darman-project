@@ -2,14 +2,56 @@
 <project version="4">
   <component name="PublishConfigData" serverName="metall" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="metall">
+      <paths name="aers">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
+      <paths name="avtogid">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="darman test">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="kidney">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="metall">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="rline">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="time">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="tsunaev">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

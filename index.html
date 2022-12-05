@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <title>Document</title>
 </head>
 <body>
@@ -299,12 +302,18 @@
 
         <div class="about-main-block row">
             <div class="about-main-block-img col-xl-6 col-lg-6 col-md-12">
+                <a data-fancybox="gallery" data-src="https://lipsum.app/id/5/1024x768">
                 <div class="img-bg-about">
-                    <img src="img/album.png" alt="">
+                   <img src="img/album.png" alt="">
                 </div>
-                <div class="main-search">
-                    <img src="img/search.svg" alt="">
-                </div>
+                    <div class="main-search">
+                    </div>
+                </a>
+                <!-- в цикл добавлять элементы ниже -->
+                <a style="display: none" data-fancybox="gallery" data-src="https://lipsum.app/id/3/200x150"><img src="https://lipsum.app/id/3/200x150" alt=""></a>
+                <a style="display: none" data-fancybox="gallery" data-src="https://lipsum.app/id/4/200x150"><img src="https://lipsum.app/id/4/200x150" alt=""></a>
+
+
             </div>
             <div class="about-main-block-text col-xl-6 col-lg-6 col-md-12">
                 <i style="color: #000;">АО «Кизлярагрокомплекс» является приемником Кизлярского маслозавода, история
@@ -352,268 +361,360 @@
 
     <div class="production-slider dsasda">
         <div class="production-slider-wrapper wpfp">
-
-            <div class="slider slider-nav">
-
-                <div class="production-slider-items prod-active" dataname="milk">
-                    <img src="img/milk.png" alt="">
-                    <p>Молоко</p>
-                </div>
-
-
-                <div class="production-slider-items" dataname="bread">
-                    <img src="img/milk.png" alt="">
-                    <p>Молоко</p>
-                </div>
-
-
-                <div class="production-slider-items" dataname="milk">
-                    <img src="img/milk.png" alt="">
-                    <p>Молоко</p>
-                </div>
-
-                <div class="production-slider-items" dataname="bread">
-                    <img src="img/milk.png" alt="">
-                    <p>Молоко</p>
-                </div>
-
-
-                <div class="production-slider-items" dataname="milk">
-                    <img src="img/milk.png" alt="">
-                    <p>Молоко</p>
-                </div>
-
-
-                <div class="production-slider-items" dataname="bread">
-                    <img src="img/milk.png" alt="">
-                    <p>Молоко</p>
-                </div>
-
-                <div class="production-slider-items" dataname="milk">
-                    <img src="img/milk.png" alt="">
-                    <p>Молоко</p>
-                </div>
-
-
-            </div>
-
-
-            <div class="container">
-                <p align="center" class="mt-4"
-                   style="font-size: 20px;    margin-bottom: 20px; font-weight: 500;line-height: 32px;">
-                    Популярные товары в разделе:
-                </p>
-            </div>
-            <div class="slider slider-single">
-
-                <div class="flenow">
-                    <div class="recommend-items">
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
-                                Заказать
-                            </div>
-                        </div>
-
-
+            <div class="tabs">
+                <button class="tab active">
+                    <div class="production-slider-items prod-active" dataname="milk">
+                        <img src="img/milk.png" alt="">
+                        <p>Молоко</p>
                     </div>
+                </button>
+                <button class="tab non-active">
+                    <div class="production-slider-items" dataname="bread">
+                    <img src="img/milk.png" alt="">
+                    <p>Молоко</p>
                 </div>
-
-
-                <div class="flenow">
-                    <div class="recommend-items">
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn">
-                                Заказать
-                            </div>
-                        </div>
-
-
+                </button>
+                <button class="tab non-active">
+                    <div class="production-slider-items" dataname="milk">
+                    <img src="img/milk.png" alt="">
+                    <p>Молоко</p>
+                </div>
+                </button>
+                <button class="tab non-active">
+                    <div class="production-slider-items" dataname="milk">
+                        <img src="img/milk.png" alt="">
+                        <p>Молоко</p>
                     </div>
-                </div>
-
-                <div class="flenow">
-                    <div class="recommend-items">
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn">
-                                Заказать
-                            </div>
-                        </div>
-
-
-                        <div class="recommend-item">
-                            <div class="recommend-item-img">
-                                <img src="img/milssk.png" alt="">
-                            </div>
-                            <p>Молоко Цельное Отборное 6%</p>
-                            <div class="product-item-btn">
-                                Заказать
-                            </div>
-                        </div>
-
-
+                </button>
+                <button class="tab non-active">
+                    <div class="production-slider-items" dataname="milk">
+                        <img src="img/milk.png" alt="">
+                        <p>Молоко</p>
                     </div>
+                </button>
+                <button class="tab non-active">
+                    <div class="production-slider-items" dataname="milk">
+                        <img src="img/milk.png" alt="">
+                        <p>Молоко</p>
+                    </div>
+                </button>
+                <button class="tab non-active">
+                    <div class="production-slider-items" dataname="bread">
+                        <img src="img/milk.png" alt="">
+                        <p>Молоко</p>
+                    </div>
+                </button>
+                <button class="tab non-active">
+                    <div class="production-slider-items" dataname="bread">
+                    <img src="img/milk.png" alt="">
+                    <p>Молоко</p>
                 </div>
+                </button>
             </div>
 
 
         </div>
+
+        <div class="container">
+            <p align="center" class="mt-4"
+               style="font-size: 20px;    margin-bottom: 20px; font-weight: 500;line-height: 32px;">
+                Популярные товары в разделе:
+            </p>
+        </div>
+
+        <div class="tab-content">
+            <div class="flenow">
+                <div class="recommend-items">
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-content hidden">
+            <div class="flenow">
+                <div class="recommend-items">
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Хлеб</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Хлеб Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>МХлеб</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-content hidden">
+            <div class="flenow">
+                <div class="recommend-items">
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-content hidden">
+            <div class="flenow">
+                <div class="recommend-items">
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                    <div class="recommend-item">
+                        <div class="recommend-item-img">
+                            <img src="img/milssk.png" alt="">
+                        </div>
+                        <p>Молоко Цельное Отборное 6%</p>
+                        <div class="product-item-btn info popup-trigger" id="infosadak" title="info">
+                            Заказать
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
     </div>
 </div>
 </div>
@@ -1113,6 +1214,43 @@
                 $('.popup').removeClass('is-visible');
             }
         });
+    });
+
+    const tabs = document.querySelectorAll(".tab");
+    const tabContent = document.querySelectorAll(".tab-content");
+
+    let tabNo = 0;
+    let contentNo = 0;
+
+    tabs.forEach((tab) => {
+        tab.dataset.id = tabNo;
+        tabNo++;
+        tab.addEventListener("click", function () {
+            tabs.forEach((tab) => {
+                tab.classList.remove("active");
+                tab.classList.add("non-active");
+            });
+            this.classList.remove("non-active");
+            this.classList.add("active");
+            tabContent.forEach((content) => {
+                content.classList.add("hidden");
+                if (content.dataset.id === tab.dataset.id) {
+                    content.classList.remove("hidden");
+                }
+            });
+        });
+    });
+
+    tabContent.forEach((content) => {
+        content.dataset.id = contentNo;
+        contentNo++;
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script>
+    // Customization example
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        infinite: false
     });
 </script>
 </body>
